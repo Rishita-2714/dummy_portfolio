@@ -1,242 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jane Doe - Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Geek Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #121212;
+      color: #f4f4f4;
+    }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
+    header {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #f4f4f4;
+      text-align: center;
+      padding: 100px 0;
+    }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
+    header img {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.5s, box-shadow 0.5s;
+    }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
+    header img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px 5px #00ffff;
+    }
 
-        .hero .btn {
-            background: white;
-            color: #2575fc;
-            border: none;
-            padding: 10px 25px;
-            font-weight: 600;
-            border-radius: 25px;
-            transition: all 0.3s ease-in-out;
-        }
+    .btn-primary {
+      background: #00ffff;
+      border: none;
+      border-radius: 50px;
+    }
 
-        .hero .btn:hover {
-            background: #2575fc;
-            color: white;
-        }
+    .btn-primary:hover {
+      background: #ff007c;
+    }
 
-        /* About Me Section */
-        .about {
-            padding: 80px 20px;
-            background: #f8f9fa;
-        }
+    #contact {
+      background: linear-gradient(120deg, #2c5364, #0f2027);
+      color: #f4f4f4;
+      text-align: center;
+      padding: 50px 0;
+    }
 
-        .about img {
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            height: auto;
-        }
-
-        .about h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        /* Skills Section */
-        .skills {
-            background: linear-gradient(135deg, #2575fc, #6a11cb);
-            color: white;
-            padding: 80px 20px;
-        }
-
-        .skills h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-
-        /* Projects Section */
-        .projects {
-            padding: 80px 20px;
-            background: #f8f9fa;
-        }
-
-        .projects h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-
-        .card img {
-            height: 200px;
-            object-fit: cover;
-            transition: transform 0.3s;
-        }
-
-        .card img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            padding: 80px 20px;
-        }
-
-        .contact h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        .contact .info {
-            margin-bottom: 20px;
-        }
-
-        .contact .info i {
-            font-size: 1.5rem;
-            margin-right: 10px;
-        }
-
-        .contact .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .contact .social-icons a:hover {
-            color: #ffd700;
-        }
-
-        /* Footer Section */
-        footer {
-            background: #212529;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+    footer {
+      background: #1f1f1f;
+      color: #f4f4f4;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cybersecurity Geek</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Jane Doe</h1>
-        <p>Creative Developer | Designer | Problem Solver</p>
-        <a href="#contact" class="btn">Contact Me</a>
-    </section>
+  <!-- Header -->
+  <header>
+    <div class="container text-center">
+      <img src="https://i.pinimg.com/736x/0a/7a/26/0a7a26960d7311cdd679f0b52381f5b7.jpg" alt="Profile Picture">
+      <h1 class="mt-4">Hi, I'm a Cybersecurity Geek!</h1>
+      <p class="lead mt-3">I'm a cybersecurity enthusiast specializing in identifying vulnerabilities and securing systems. My passion lies in participating in CTFs and ethical hacking challenges.</p>
+      <a href="#contact" class="btn btn-primary mt-3">Contact Me</a>
+    </div>
+  </header>
 
-    <!-- About Me Section -->
-    <section class="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="https://wallpapercave.com/wp/wp2254152.jpg" class="img-fluid" alt="Jane Doe">
-                </div>
-                <div class="col-md-6">
-                    <h2>About Me</h2>
-                    <p>Hi! I'm Jane Doe, a passionate developer and designer with experience in creating visually stunning and user-friendly interfaces. I enjoy coding, designing, and solving challenging problems to make the digital world a better place.</p>
-                </div>
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card bg-dark text-light border-0">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Penetration Testing</h5>
+              <p class="card-text">Expert in identifying vulnerabilities and exploiting systems ethically.</p>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills text-center">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <h4>Web Development</h4>
-                    <p>HTML, CSS, JavaScript, React</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Design</h4>
-                    <p>Figma, Photoshop, Illustrator</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Problem Solving</h4>
-                    <p>C++, Python, Algorithms</p>
-                </div>
+        <div class="col-md-4 mb-3">
+          <div class="card bg-dark text-light border-0">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Network Security</h5>
+              <p class="card-text">Skilled in securing network infrastructures and analyzing traffic.</p>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">A creative solution for modern web challenges.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">An innovative app for seamless user experience.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-4 mb-3">
+          <div class="card bg-dark text-light border-0">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Python Scripting</h5>
+              <p class="card-text">Proficient in automating cybersecurity tasks using Python.</p>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Me Section -->
-    <section id="contact" class="contact text-center">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="info">
-                <p><i class="bi bi-geo-alt-fill"></i>123 Tech Street, Silicon Valley, CA</p>
-                <p><i class="bi bi-envelope-fill"></i>janedoe@example.com</p>
-                <p><i class="bi bi-telephone-fill"></i>+1 123-456-7890</p>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/19/6f/32/196f325972bc38eae76e84a4df4ed1d2.jpg" class="card-img-top" alt="CTF Platform">
+            <div class="card-body">
+              <h5 class="card-title">CTF Platform</h5>
+              <p class="card-text">Developed a custom Capture The Flag platform for practicing cybersecurity challenges.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
             </div>
-            <div class="social-icons">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-github"></i></a>
-            </div>
+          </div>
         </div>
-    </section>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/39/dc/f5/39dcf533a8f7f24dde9bd6ce4be314a3.jpg" class="card-img-top" alt="Network Security Dashboard">
+            <div class="card-body">
+              <h5 class="card-title">Network Security Dashboard</h5>
+              <p class="card-text">Built a dashboard to monitor and analyze network traffic in real-time.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/7a/09/81/7a0981fab55fb88060f2579798fe7b70.jpg" class="card-img-top" alt="Penetration Testing Toolkit">
+            <div class="card-body">
+              <h5 class="card-title">Penetration Testing Toolkit</h5>
+              <p class="card-text">Created a Python-based toolkit for automating penetration testing tasks.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Jane Doe. All Rights Reserved.</p>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: geek@cybersecurity.com | Phone: +123 456 7890</p>
+      <a href="https://www.linkedin.com/in/your-profile" class="btn btn-light">LinkedIn</a>
+      <a href="https://github.com/your-profile" class="btn btn-light">GitHub</a>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>
+    <p>&copy; 2025 Cybersecurity Geek | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
